@@ -1,0 +1,4 @@
+BD:
+  - ajouter la date de visite du lien du profile
+  - ajouter un champs de reservation du crawlage pour eviter de visualiser le même profile
+  

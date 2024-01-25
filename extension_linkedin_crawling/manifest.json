@@ -1,0 +1,32 @@
+{
+  "manifest_version": 3,
+  "name": "LinkedIn Profile Crawler",
+  "version": "1.0",
+  "permissions": [
+    "activeTab",
+    "storage",
+    "scripting"
+  ],
+  "host_permissions": ["https://www.linkedin.com/*"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "48": "voicedigit.png"
+    }
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://www.linkedin.com/*"],
+      "js": ["content_script.js"],
+      "permissions": ["tabs","activeTab", "storage","scripting","devtools"]
+    }
+  ],
+  "background": {
+    "service_worker": "background.js",
+    "permissions": [
+      "tabs",
+      "scripting",
+      "devtools",
+      "https://www.linkedin.com/*"]
+  }
+}
