@@ -1,0 +1,101 @@
+<!-- popup.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ResumeTailorPro</title>
+  <link rel="stylesheet" href="styles/popup.css">
+</head>
+<body>
+
+<!-- Login Form -->
+<div id="login-form" class="screen">
+  <h1>Login</h1>
+  <form id="login-form">
+    <label for="email">Email:</label>
+    <input type="email" id="email" required>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" required>
+
+    <button type="submit">Submit</button>
+  </form>
+
+  <div id="login-options">
+    <button id="skip-login">Skip Login</button>
+    <button id="forgot-password">Forgot Password</button>
+  </div>
+</div>
+
+<!-- Jobs Screen -->
+<div id="jobs-screen" class="screen">
+  <h1>Saved Jobs</h1>
+  
+  <!-- Display saved jobs here -->
+
+  <button id="profile-button">Profile</button>
+  <button id="resumes-button">My Resumes</button>
+</div>
+
+<!-- Profile Page -->
+<div id="profile-page" class="screen">
+  <h1>Profile</h1>
+  
+  <button class="back-button" onclick="goBack('jobs-screen')">Back</button>
+
+  <form id="update-profile-form">
+    <label for="full-name">Full Name:</label>
+    <input type="text" id="full-name">
+
+    <label for="job-category">Job Category:</label>
+    <input type="text" id="job-category">
+
+    <label for="role">Role:</label>
+    <input type="text" id="role">
+
+    <button type="submit">Update Profile</button>
+  </form>
+</div>
+
+<!-- Resume Page -->
+<div id="resume-page" class="screen">
+  <h1>My Resumes</h1>
+  
+  <button class="back-button" onclick="goBack('jobs-screen')">Back</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>CV Name</th>
+        <th>Date</th>
+        <th>Role</th>
+        <th>Edit</th>
+        <th>Delete</th>
+      </tr>
+    </thead>
+    <tbody>
+      <!-- Placeholder for dynamically displaying resumes -->
+    </tbody>
+  </table>
+
+  <button id="tailor-resume-button">Tailor Resume</button>
+</div>
+
+<!-- Tailor Resume Page -->
+<div id="tailor-resume-page" class="screen">
+  <h1>Tailor Resume</h1>
+  
+  <button class="back-button" onclick="goBack('resume-page')">Back</button>
+
+  <!-- Placeholder for displaying job information from the page -->
+
+  <button id="save-tailored-resume">Save</button>
+  <button id="edit-tailored-resume">Edit</button>
+  <button id="use-chatgpt">Use ChatGPT</button>
+</div>
+
+<script src="scripts/popup.js"></script>
+</body>
+</html>
