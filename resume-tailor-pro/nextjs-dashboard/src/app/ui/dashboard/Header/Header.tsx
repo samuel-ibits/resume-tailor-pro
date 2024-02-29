@@ -13,12 +13,12 @@ export default function Header() {
         <HeaderSidebarToggler />
         <Link href="/" className="header-brand d-md-none">
           <svg width="80" height="46">
-            <title>CoreUI Logo</title>
+            <title>Resume Tailor PRO</title>
             <use xlinkHref="/assets/brand/coreui.svg#full" />
           </svg>
         </Link>
         <div className="header-nav d-none d-md-flex">
-          <HeaderFeaturedNav />
+          {/* <HeaderFeaturedNav /> */}
         </div>
         <div className="header-nav ms-auto">
           <HeaderNotificationNav />
@@ -27,10 +27,10 @@ export default function Header() {
           <HeaderProfileNav />
         </div>
       </Container>
-      <div className="header-divider border-top my-2 mx-sm-n2" />
-      <Container fluid>
+      {/* <div className="header-divider border-top my-2 mx-sm-n2" /> */}
+      {/* <Container fluid>
         <Breadcrumb />
-      </Container>
+      </Container> */}
     </header>
   )
 }

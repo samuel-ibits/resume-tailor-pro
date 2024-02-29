@@ -1,0 +1,19 @@
+class="js-match-insights-provider-tvvxwd ecydgvn1"  jobtype
+
+<div data-testid="jobsearch-JobInfoHeader-companyLocation" class="css-scnhev eu4oa1w0"><span>Abuja</span></div>     companyLocation
+
+
+
+var myHTML= "<div><h1>Jimbo.</h1>\n<p>That's what she said</p></div>";
+
+var strippedHtml = myHTML.replace(/<[^>]+>/g, '');
+
+// Jimbo.
+// That's what she said
+console.log(stripedHtml);
+
+
+
+
+class="jobsearch-embeddedBody css-1omm75o eu4oa1w0"
+

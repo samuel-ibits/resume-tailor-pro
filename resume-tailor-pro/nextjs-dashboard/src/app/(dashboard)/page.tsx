@@ -56,7 +56,7 @@ export default function Page() {
                     )
                   </span>
                 </div>
-                <div>Users</div>
+                <div>Profiles</div>
               </div>
               <Dropdown align="end">
                 <DropdownToggle
@@ -93,7 +93,7 @@ export default function Page() {
                     )
                   </span>
                 </div>
-                <div>Income</div>
+                <div>Credit</div>
               </div>
               <Dropdown align="end">
                 <DropdownToggle
@@ -130,7 +130,7 @@ export default function Page() {
                     )
                   </span>
                 </div>
-                <div>Conversion Rate</div>
+                <div>Resume</div>
               </div>
               <Dropdown align="end">
                 <DropdownToggle
@@ -167,7 +167,7 @@ export default function Page() {
                     )
                   </span>
                 </div>
-                <div>Sessions</div>
+                <div>Jobs</div>
               </div>
               <Dropdown align="end">
                 <DropdownToggle
@@ -180,9 +180,9 @@ export default function Page() {
                 </DropdownToggle>
 
                 <DropdownMenu>
-                  <DropdownItem href="#/action-1">Action</DropdownItem>
-                  <DropdownItem href="#/action-2">Another action</DropdownItem>
-                  <DropdownItem href="#/action-3">Something else</DropdownItem>
+                  <DropdownItem href="#/action-1">Linkedin</DropdownItem>
+                  <DropdownItem href="#/action-2">Indeed</DropdownItem>
+                  {/* <DropdownItem href="#/action-3">Something else</DropdownItem> */}
                 </DropdownMenu>
               </Dropdown>
             </CardBody>
@@ -192,7 +192,7 @@ export default function Page() {
           </Card>
         </div>
       </div>
-
+{/* 
       <Card className="mb-4">
         <CardBody>
           <div className="d-flex justify-content-between">
@@ -296,9 +296,9 @@ export default function Page() {
             </div>
           </div>
         </CardFooter>
-      </Card>
+      </Card> */}
 
-      <div className="row">
+      {/* <div className="row">
         <div className="col-sm-6 col-lg-4">
           <Card
             className="mb-4"
@@ -386,7 +386,7 @@ export default function Page() {
           </Card>
         </div>
 
-      </div>
+      </div> */}
 
       <div className="row">
         <div className="col-md-12">
@@ -395,7 +395,7 @@ export default function Page() {
               Traffic &amp; Sales
             </CardHeader>
             <CardBody>
-              <div className="row">
+              {/* <div className="row">
                 <div className="col-sm-6">
                   <div className="row">
                     <div className="col-6">
@@ -681,7 +681,7 @@ export default function Page() {
                     />
                   </div>
                 </div>
-              </div>
+              </div> */}
 
               <br />
 
@@ -692,9 +692,9 @@ export default function Page() {
                       <th className="text-center" aria-label="icon">
                         <FontAwesomeIcon icon={faUsers} fixedWidth />
                       </th>
-                      <th>User</th>
+                      <th>Profile</th>
                       <th>Usage</th>
-                      <th className="text-center">Payment Method</th>
+                      <th className="text-center">Resumes</th>
                       <th>Activity</th>
                       <th aria-label="Action" />
                     </tr>
@@ -737,10 +737,10 @@ export default function Page() {
                         <ProgressBar className="progress-thin" variant="success" now={50} />
                       </td>
                       <td className="text-center" aria-label="icon">
-                        <FontAwesomeIcon icon={faCcAmex} size="lg" fixedWidth />
+                       0
                       </td>
                       <td>
-                        <div className="small text-black-50">Last login</div>
+                        <div className="small text-black-50">Last used</div>
                         <div className="fw-semibold">10 sec ago</div>
                       </td>
                       <td>
@@ -804,10 +804,10 @@ export default function Page() {
                         <ProgressBar className="progress-thin" variant="info" now={10} />
                       </td>
                       <td className="text-center" aria-label="icon">
-                        <FontAwesomeIcon icon={faCcVisa} size="lg" fixedWidth />
+                     4
                       </td>
                       <td>
-                        <div className="small text-black-50">Last login</div>
+                        <div className="small text-black-50">Last used</div>
                         <div className="fw-semibold">5 minutes ago</div>
                       </td>
                       <td>
@@ -871,10 +871,10 @@ export default function Page() {
                         <ProgressBar className="progress-thin" variant="warning" now={74} />
                       </td>
                       <td className="text-center" aria-label="icon">
-                        <FontAwesomeIcon icon={faCcStripe} size="lg" fixedWidth />
+                        9
                       </td>
                       <td>
-                        <div className="small text-black-50">Last login</div>
+                        <div className="small text-black-50">Last used</div>
                         <div className="fw-semibold">1 hour ago</div>
                       </td>
                       <td>
@@ -938,10 +938,10 @@ export default function Page() {
                         <ProgressBar className="progress-thin" variant="danger" now={98} />
                       </td>
                       <td className="text-center" aria-label="icon">
-                        <FontAwesomeIcon icon={faCcPaypal} size="lg" fixedWidth />
+                       23
                       </td>
                       <td>
-                        <div className="small text-black-50">Last login</div>
+                        <div className="small text-black-50">Last used</div>
                         <div className="fw-semibold">Last month</div>
                       </td>
                       <td>
@@ -1005,10 +1005,9 @@ export default function Page() {
                         <ProgressBar className="progress-thin" variant="info" now={22} />
                       </td>
                       <td className="text-center" aria-label="icon">
-                        <FontAwesomeIcon icon={faCcApplePay} size="lg" fixedWidth />
-                      </td>
+9                      </td>
                       <td>
-                        <div className="small text-black-50">Last login</div>
+                        <div className="small text-black-50">Last used</div>
                         <div className="fw-semibold">Last week</div>
                       </td>
                       <td>
@@ -1072,10 +1071,9 @@ export default function Page() {
                         <ProgressBar className="progress-thin" variant="success" now={43} />
                       </td>
                       <td className="text-center" aria-label="icon">
-                        <FontAwesomeIcon icon={faCcAmex} size="lg" fixedWidth />
-                      </td>
+7                      </td>
                       <td>
-                        <div className="small text-black-50">Last login</div>
+                        <div className="small text-black-50">Last used</div>
                         <div className="fw-semibold">Yesterday</div>
                       </td>
                       <td>

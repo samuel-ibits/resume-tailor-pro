@@ -6,23 +6,20 @@ export default function Footer() {
     <footer className="footer border-top px-sm-2 py-2">
       <Container fluid className="text-center align-items-center flex-column flex-md-row d-flex justify-content-between">
         <div>
-          <a className="text-decoration-none" href="https://coreui.io">CoreUI </a>
-          <a className="text-decoration-none" href="https://coreui.io">
-            Bootstrap Admin
-            Template
+          <a className="text-decoration-none" href="#">Resume Tailor  </a>
+          <a className="text-decoration-none" href="#">
+       PRO
           </a>
           {' '}
-          © 2021
-          creativeLabs.
+          © 2024 Reserved
         </div>
-        <div className="ms-md-auto">
+        <div className="ms-md-auto text-muted font-size-smaller font-weight-lighter">
           Powered by&nbsp;
           <a
-            className="text-decoration-none"
-            href="@app/ui/dashboard/AdminLayout"
+            className=" text-decoration-none text-muted"
+            href="syberspace.com.ng"
           >
-            CoreUI UI
-            Components
+      syberspace
           </a>
         </div>
       </Container>
